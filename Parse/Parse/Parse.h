@@ -226,6 +226,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readwrite, class) PFLogLevel logLevel;
 
+/**
+ Reset the currentParseManger to nil as a workaround to prevent crash in Share Extension when enableDataSharing is called.
+*/
++ (void)resetParseManager;
+
 @end
 
 NS_ASSUME_NONNULL_END

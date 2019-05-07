@@ -238,4 +238,7 @@ static ParseClientConfiguration *currentParseConfiguration_;
     return collection;
 }
 
++ (void)resetParseManager {
+    currentParseManager_ = nil;
+}
 @end
